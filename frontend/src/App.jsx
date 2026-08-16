@@ -45,7 +45,7 @@ import {
   RefreshCw
 } from "lucide-react";
 
-const GATEWAY_URL = "http://localhost:3002";
+const GATEWAY_URL = import.meta.env.VITE_GATEWAY_URL || "";
 const MERCHANT_WALLET = "0xAff172F0ca953261b964Dda53641b7A8ceA2d65b"; // Real Recipient Merchant Wallet
 const XSGD_AVALANCHE_CONTRACT = "0xDC3326e71D45186F113a2F448984CA0e8D201995";
 
